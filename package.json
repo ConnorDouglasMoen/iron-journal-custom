@@ -7,7 +7,9 @@
   "private": true,
   "scripts": {
     "lint": "eslint --ext .js,.ts,.vue ./",
-    "test": "echo \"No test specified\" && exit 0"
+    "test": "echo \"No test specified\" && exit 0",
+    "predeploy": "quasar build",
+    "deploy": "gh-pages -d dist/spa"
   },
   "dependencies": {
     "@quasar/extras": "^1.14.3",
@@ -35,6 +37,7 @@
     "eslint": "^8.1.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-vue": "^7.20.0",
+    "gh-pages": "^6.1.1",
     "workbox-webpack-plugin": "^6.0.0"
   },
   "browserslist": [

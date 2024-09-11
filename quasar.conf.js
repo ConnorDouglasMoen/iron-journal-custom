@@ -77,6 +77,7 @@ module.exports = configure(function (ctx) {
       chainWebpack (/* chain */) {
         //
       },
+      publicPath: '/iron-journal-custom/',
     },
 
     // Full list of options: https://v2.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-devServer
